@@ -35,10 +35,15 @@
   color: pink;
 }
 
+.content {
+  margin: 40px 450px;
+}
+
 .blog-preview {
   max-width: 680px;
-  margin: 60px 450px;
-  padding: 10px 16px;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  padding: 6px 16px;
   border-bottom: 1px solid white;
   
 }
