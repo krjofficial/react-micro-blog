@@ -1,21 +1,28 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';   
 
 const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [author, setAuthor] = useState('');
+  const [isPending, setIsPending] = useState(false);
+  const history = useHistory();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => { 
     e.preventDefault(); // prevent page reload
     const blog = { title, body, author };
     
-
+    setIsPending(true);
     fetch('http://localhost:8000/blogs', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json'},
       body: JSON.stringify(blog)
     }).then(() => {
       console.log('new Blog added');
+      setIsPending(false);
+      // history.go(-1);
+      history.push('/');  
+      alert('new Blog added');
     })
   };
 
@@ -45,7 +52,8 @@ const Create = () => {
           <option value="a">a</option>
           <option value="b">b</option>
         </select>
-        <button type='submit'>Add Blog</button>
+        { !isPending && <button type='submit'>Add Blog</button>}
+        { isPending && <button type='submit' disabled>Adding Blog...</button>}
       </form>
     </div>
   );

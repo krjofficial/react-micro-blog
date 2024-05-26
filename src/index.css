@@ -76,6 +76,16 @@
   margin: 20px 0;
 }
 
+.blog-details button {
+  background: plum;
+  color: black;
+  font-weight: bold;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .create {
   max-width: 400px;
   margin: 0 auto;
@@ -99,10 +109,37 @@
 
 .create button {
   background: plum;
-  color: #fff;
+  color: black;
+  font-weight: bold;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.not-found h2 {
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+.not-found p {
+  font-size: x-large;
+  margin-bottom: 50px;
+}
+
+.not-found {
+  text-align: center;/* Center aligns all children horizontally */ 
+}
+
+.not-found a {
+  text-decoration: none;
+  color: white;
+  background-color: purple;
+  border-radius: 5px;
+  padding: 10px 20px; 
+  font-weight: bold;
 
 }
+
+
+
+
