@@ -9,12 +9,14 @@ const BlogDetails = () => {
   const history = useHistory();
 
   const handleClick = () => {
-    fetch('http://localhost:8000/blogs' + blog.id, {
+    fetch('http://localhost:8000/blogs/' + blog.id, {
       method: 'DELETE'
     }).then(() => {
       history.push('/');
-    })
-  }
+      alert('Blog deleted successfully');
+    });
+  };
+  
   return (
     <div className="blog-details">
       { isPending && <div>Loading...</div>}
