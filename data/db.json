@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      "author": "a",
+      "id": "1"
+    },
+    {
+      "title": "My Second Blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+      "author": "b",
+      "id": "2"
+    },
+    {
+      "id": "2caa",
+      "title": "lkj",
+      "body": "klj",
+      "author": "a"
+    }
+  ]
+}
